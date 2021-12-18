@@ -218,10 +218,10 @@ while True:                                     #use while loop to make window s
                     bulletSound.play()
 
                     direction = 1
-                    if man.left:
-                        direction = -1
-                    else:
+                    if man.right:
                         direction = 1
+                    else:
+                        direction = -1
                     bullets.append(
                         Bullet(round(man.x + man.width // 2), round(man.y + man.height // 2), 5, RED, direction, 10))
 
