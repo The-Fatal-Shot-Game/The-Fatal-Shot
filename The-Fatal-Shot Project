@@ -151,6 +151,7 @@ class Enemy:#enemy will move to left and right automatically from (x) to (end)
         self.health -= 1
         if self.health == 0:
             self.visible = False
+            self.hitbox = (0, 0, 0, 0)
         print("hit")
 
 
